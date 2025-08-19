@@ -11,16 +11,20 @@ POST http://localhost:3000/api/v1/cats
 Content-Type: application/json
 
 {
-  "name": "Whiskers",
-  "age": 3,
-  "breed": "Siamese"
+  "name":"cat 3",
+  "age": 3
 }
 
 ### Update a cat by ID
-PATCH http://localhost:3000/api/v1/cats/1
+PATCH http://localhost:3000/api/v1/cats/2
 Content-Type: application/json
 
+{
+  "name": "Whiskers",
+  "age": 5
+}
+
 ### Delete a cat by ID
-DELETE http://localhost:3000/api/v1/cats/1
+DELETE http://localhost:3000/api/v1/cats/100
 Content-Type: application/json
 

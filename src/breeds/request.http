@@ -1,0 +1,10 @@
+### Get all breeds
+GET http://localhost:3000/api/v1/breeds
+
+### Create a new breed
+POST http://localhost:3000/api/v1/breeds
+Content-Type: application/json
+
+{
+  "name": "Persa"
+}

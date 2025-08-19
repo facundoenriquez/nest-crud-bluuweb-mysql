@@ -1,14 +1,18 @@
-import { IsNumber, IsString } from "class-validator";
+import { IsInt, IsNumber, IsOptional, IsPositive, IsString, MinLength } from "class-validator";
 
 export class CreateCatDto {
 
     @IsString()
+    @MinLength(2)
     name: string;
 
-    @IsNumber()
+    @IsInt()
+    @IsPositive()
     age: number;
 
-    @IsString()
-    breed: string;
+    @IsOptional()
+    @IsNumber()
+    @IsPositive()
+    breed_id: number;
 
 }
